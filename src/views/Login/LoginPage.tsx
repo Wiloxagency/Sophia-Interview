@@ -13,7 +13,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ setIsLoggedIn }) => {
 
   // Set random image only once on initial load
   useEffect(() => {
-    const images = ["src/assets/cover.jpg", "src/assets/cover2.jpg"];
+    const images = ["../src/assets/cover.jpg", "../src/assets/cover2.jpg"];
     const selectedImage = images[Math.floor(Math.random() * images.length)];
     setRandomImage(selectedImage);
 
