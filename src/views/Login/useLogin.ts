@@ -19,6 +19,7 @@ const useLogin = (
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "x-functions-key": import.meta.env.FUNCTIONS_KEY_QA,
         },
         body: JSON.stringify({ email: username, password }),
       });
